@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #007BFF, #00bfff);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.game {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: opacity 0.5s;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #070d13;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    width: 300px;
+    margin: 20px auto;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: #007BFF;
+    border: 2px solid #333;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.2s;
+}
+
+.cell:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    text-align: center;
+    transition: opacity 0.5s;
+}
+
+#result-message {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#result-new-game {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#result-new-game:hover {
+    background-color: #0056b3;
+}
